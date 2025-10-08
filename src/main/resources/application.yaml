@@ -11,3 +11,13 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+jwt:
+  secret: ODefm4WsKjgOuUCfiE25oli8HCReb30BLwGICkxLBI5hqaIxrFC9kqUidpRMTl1re7ehbWD60ugrulm62tEdWECWBbR4Os/y9dw5VIgg40o=
+  expiredTime: 30
+  expiredTimeRefreshToken: 30

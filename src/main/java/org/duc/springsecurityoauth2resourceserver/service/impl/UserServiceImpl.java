@@ -22,7 +22,7 @@ public class UserServiceImpl implements UserService {
         }
 
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-        User user = User.builder()
+        final User user = User.builder()
                 .email(userCreateRequest.getEmail())
                 .password(passwordEncoder.encode(userCreateRequest.getPassword()))
                 .build();
